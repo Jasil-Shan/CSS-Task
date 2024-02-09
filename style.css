@@ -1,0 +1,94 @@
+body {
+    background-color: rgba(0, 0, 0, 0.904);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-card {
+    background-color: white;
+    width: 462px;
+    height: 603px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#sub-card {
+    width: 340px;
+    height: 365px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    display: flex;
+    color: rgba(255, 107, 130, 1);
+    flex-direction: row;
+    width: 400px;
+}
+
+h3:before,
+h3:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.unit {
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: 75px;
+    border: 1px solid;
+    border-color: #C8C8C8;
+    margin: 10px;
+    gap: 20px;
+}
+
+input[type="radio"]{
+    accent-color: #de3851;
+    height: 100px;
+}
+
+.right-items {
+    margin-left: auto;
+}
+
+.qnty {
+    font-size: medium;
+    font-weight: 700;
+}
+
+.price-head {
+    font-size: small;
+    font-weight: 100;
+}
+
+.price {
+    font-size: medium;
+    font-weight: 600;
+}
+
+.mrp {
+    font-size: x-small;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.offer-box {
+    width: 55px;
+    height: 17px;
+    background-color: rgba(255, 107, 130, 1);
+    font-size: small;
+    font-weight: 500;
+    color: white;
+    padding: 3px;
+}

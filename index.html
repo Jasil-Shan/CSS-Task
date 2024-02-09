@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task</title>
+</head>
+
+<body>
+    <div id="main-card">
+        <h3>YAY! Its BOGO</h3>
+        <div id="sub-card">
+            <label class="unit">
+                <input type="radio" name="unit_selection">
+                <div class="left-items">
+                    <div>
+                        <span class="qnty">1 Unit</span>
+                        <span class="offer-box">20% Off</span>
+                    </div>
+                    <span class="price-head">Standard Price</span>
+                </div>
+                <div class="right-items">
+                    <span class="price">$10.00 USD</span><br>
+                    <span class="mrp">$24.00 USD</span>
+                </div>
+                <div class="unit-box"></div>
+            </label>
+            <label class="unit">
+                <input type="radio" name="unit_selection">
+                <div class="unit-box">
+                </div>
+            </label>
+            <label class="unit">
+                <input type="radio" name="unit_selection">
+                <div class="unit-box"></div>
+            </label>
+        </div>
+        <button>Add</button>
+    </div>
+
+
+    <script>
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+        console.log(radioButtons);
+        radioButtons.forEach(radioButton => {
+            radioButton.addEventListener('click', function () {
+                const unitElement = this.closest('.unit');
+                console.log(55);
+
+                if (this.checked) {
+                unitElement.style.paddingBottom = '25px';
+            } else {
+                unitElement.style.paddingBottom = '0';
+            }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
